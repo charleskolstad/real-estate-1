@@ -6,83 +6,141 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <style>
+            :root{
+                --primary-blue: rgba(77, 123, 147, 1);
+                --dark-blue: rgba(43, 57, 69, 1);
+                --orange: rgba(201, 128, 38, 1);
+                --light-blue: rgba(102, 155, 208, 1);
+                --yellow: rgba(252, 241, 163, 1);
+            }
+
             .hero-image {
                 background-image: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(assets/img/stephen-leonardi-1562682-unsplash-compressor.jpg);
-                height: 100vh;
+                height: 75vh;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: relative;
-/*
+                /*
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
-*/
+                */
             }
-            
+
             .hero-text{
-                margin-top: 25vh;
+                margin-top: 15vh;
             }
-            
+
             .hero-text h1{
                 border-top: 1px solid white;
+            }
+
+            .agent-section{
+                min-height: 25vh;
+                background-color: var(--dark-blue);
+            }
+
+            .action-section{
+                min-height: 20vh;
+            }
+            
+            .action-section div{
+                width: 50%;
+                margin: auto;
+                
             }
         </style>
     </head>
     <body>
         <div class="hero-image">
-        <main class="container pt-3">
-            <header>
-                <div class="row flex-nowrap justify-content-between">
-                    <div class="col-4 mt-2">
-                        <a href="tel:1234567891" class="mr-2"><i class="fas fa-phone"></i> (123)456-7891</a>
-                        <a href="mailto:testemail@fake.com"><i class="fas fa-paper-plane"></i> Email</a>
+            <div class="container pt-3">
+                <header>
+                    <div class="row flex-nowrap justify-content-between">
+                        <div class="col-4 mt-2">
+                            <a href="tel:1234567891" class="mr-2"><i class="fas fa-phone"></i> (123)456-7891</a>
+                            <a href="mailto:testemail@fake.com"><i class="fas fa-paper-plane"></i> Email</a>
+                        </div>
+                        <div class="col-4">
+                            <h1 class="display-4 text-white">Real Estate</h1>
+                        </div>
+                        <div class="col-4 mt-2">
+                            <a href="https://facebook.com" class="mx-2"><h2 class="d-inline"><i class="fab fa-facebook-square"></i></h2></a>
+                            <a href="https://instagram.com" class="mx-2"><h2 class="d-inline">
+                                <i class="fab fa-instagram"></i>
+                                </h2></a>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <h1 class="display-4 text-white">Real Estate</h1>
-                    </div>
-                    <div class="col-4 mt-2">
-                        <a href="https://facebook.com" class="mx-2"><h2 class="d-inline"><i class="fab fa-facebook-square"></i></h2></a>
-                        <a href="https://instagram.com" class="mx-2"><h2 class="d-inline">
-                            <i class="fab fa-instagram"></i>
-                            </h2></a>
-                    </div>
-                </div>
-            </header>
+                </header>
 
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav m-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Brows Listings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Featured Listings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Local Information</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Brows Listings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Featured Listings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Local Information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="hero-text text-white text-center">
+                    <p class="lead mb-0">Welcome to </p>
+                    <h1 class="display-1 mt-0">Your Home</h1>
                 </div>
-            </nav>
-            
-            <div class="hero-text text-white text-center">
-            <p class="lead mb-0">Welcome to </p>
-            <h1 class="display-1 mt-0">Your Home</h1>
             </div>
-        </main>
+        </div>
+
+        <div class="agent-section">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <img src="assets/img/blake-cheek-508460-unsplash-compressor.jpg" alt="" class="rounded-circle w-100 py-2">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <h1 class="display-3">Agent's Profile</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias exercitationem, est voluptatibus! Modi ipsam, laudantium ut iusto qui totam quia. Tempora culpa atque quae necessitatibus hic optio reprehenderit ab adipisci.</p>
+                        <h2 class="d-inline mr-1"><a href=""><i class="fab fa-facebook-square"></i></a></h2>
+                        <h2 class="d-inline ml-1"><a href=""><i class="fab fa-instagram"></i></a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div id="search-action" class="col-lg-4 col-md-4 col-sm-12 text-white action-section">
+                    <div>
+                        <h1>Home Search</h1>
+                        <p class="lead">Begin Now</p>
+                    </div>
+                </div>
+                <div id="estimate-action" class="col-lg-4 col-md-4 col-sm-12 text-white action-section">
+                    <h1>Your Homes Value</h1>
+                    <p class="lead">Find Out Now</p>
+                </div>
+                <div id="contact-action" class="col-lg-4 col-md-4 col-sm-12 text-white action-section">
+                    <h1>Ready to List?</h1>
+                    <p class="lead">Contact Us</p>
+                </div>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

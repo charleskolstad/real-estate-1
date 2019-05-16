@@ -40,14 +40,36 @@
                 background-color: var(--dark-blue);
             }
 
-            .action-section{
-                min-height: 20vh;
-            }
-            
             .action-section div{
                 width: 50%;
                 margin: auto;
+                margin-top: 7em;
+                margin-bottom: 7em;
+            }
+
+            #search-action{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/img/aaron-huber-401200-unsplash-compressor.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            
+            #contact-action{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/img/jason-briscoe-332508-unsplash-compressor.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
                 
+            }
+            
+            #estimate-action{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/img/vita-vilcina-3217-unsplash-compressor.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
             }
         </style>
     </head>
@@ -125,7 +147,7 @@
         </div>
 
         <div class="container-fluid">
-            <div class="row bg-dark">
+            <div class="row bg-dark text-center">
                 <div id="search-action" class="col-lg-4 col-md-4 col-sm-12 text-white action-section">
                     <div>
                         <h1>Home Search</h1>
@@ -133,12 +155,16 @@
                     </div>
                 </div>
                 <div id="estimate-action" class="col-lg-4 col-md-4 col-sm-12 text-white action-section">
-                    <h1>Your Homes Value</h1>
-                    <p class="lead">Find Out Now</p>
+                    <div>
+                        <h1>Your Homes Value</h1>
+                        <p class="lead">Find Out Now</p>
+                    </div>
                 </div>
                 <div id="contact-action" class="col-lg-4 col-md-4 col-sm-12 text-white action-section">
-                    <h1>Ready to List?</h1>
-                    <p class="lead">Contact Us</p>
+                    <div>
+                        <h1>Ready to List?</h1>
+                        <p class="lead">Contact Us</p>
+                    </div>
                 </div>
             </div>
         </div>
